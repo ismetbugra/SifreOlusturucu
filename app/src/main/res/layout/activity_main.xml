@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/uzunlukEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İstediğiniz şifre uzunluğunu giriniz:"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kelimeEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifrede istediğiniz özel kelimenizi giriniz:"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uzunlukEdittext" />
+
+    <TextView
+        android:id="@+id/sifreTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifreniz:"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Olustur"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:onClick="olustur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kelimeEdittext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
